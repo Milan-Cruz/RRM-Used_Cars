@@ -1,21 +1,13 @@
 /********f************
     
-    Project 3 Javascript
+    Project 4 Javascript
     Name: Milan Cruz
-    Date: 23-03-2024
+    Date: 18-04-2024
     Description:
-        Task 1- validade before submitting. LINE 407
-        Task 2- make the reset button work. LINE 410
-        Task 3- make the add item buttons work. LINE 413
-        Task 4- update formHasErrors() so that every field is validated
-            a- required fields. LINE 125
-            b- postal code regex. LINE 143
-            c- email regex. LINE 159
-            d- card radios checked. LINE 174
-            e- expiry date validation. LINE 189
-            f- card regex. LINE 212
-            g- card modulus LINE 230
-
+        Used car sales website with 3 pages
+        Page 1 - used cars available
+        Page 2 - about the page
+        Page 3 - contact for info and purchases
 
 *********************/
 
@@ -30,7 +22,6 @@ function formFieldHasInput(fieldElement) {
         // Invalid entry
         return false;
     }
-
     // Valid entry
     return true;
 }
@@ -48,8 +39,6 @@ function hideErrors() {
 
 function formHasErrors() {
     let errorFlag = false;
-
-    //	Complete the validations below
 
     // ALL REQUIRED FIELDS VALIDATION
     let requiredFields = ["fullname", "phone", "email", "comments"];

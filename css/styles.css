@@ -1,3 +1,16 @@
+/********f************
+    
+    Project 4 Javascript
+    Name: Milan Cruz
+    Date: 18-04-2024
+    Description:
+        Used car sales website with 3 pages
+        Page 1 - used cars available
+        Page 2 - about the page
+        Page 3 - contact for info and purchases
+
+*********************/
+
 @font-face {
     font-family: 'Bulletto';
     src: url('/fonts/bulletto-killa/Bulletto\ Killa.ttf') format('opentype');
@@ -123,7 +136,6 @@ nav li a:focus {
         .5px -.5px 0 #FFFFFF,
         -.5px .5px 0 #FFFFFF,
         .5px .5px 0 #FFFFFF;
-
 }
 
 #logo-text a {
@@ -192,7 +204,6 @@ main {
     margin: 0rem 0rem;
     /* padding: 5rem 40vw; */
     /* min-height: 75.3vh; */
-    /* Set a minimum height to ensure the container is visible */
     width: 100%;
     flex: 1 0 100%;
     display: flex;
@@ -268,7 +279,6 @@ main {
     margin: 0rem 0rem;
     /* padding: 5rem 40vw; */
     /* min-height: 75.3vh; */
-    /* Set a minimum height to ensure the container is visible */
     width: 100%;
     flex: 1 0 100%;
     display: flex;
