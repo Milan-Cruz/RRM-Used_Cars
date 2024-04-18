@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/form.js"></script>
+    <title>Road Runner Motors</title>
+</head>
+
+<body>
+    <header id="header-id">
+        <div class="margin-left-hd">
+            <img id="logo-img" src="images/car_icon_2.png" alt="">
+            <h1 id="logo-text">
+                <a href="index.html">Road Runner Motors</a>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Our Vehicles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active-page" href="buy-now.html">Buy Now!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="form-wrapper">
+            <form id="orderform" class="form-content" action="index.html" method="post">
+
+                <div class="left">
+                    <h2>Contact Information</h2>
+                    <div class="hr-container">
+                        <hr>
+                    </div>
+                    <ul>
+                        <li>
+                            <label for="fullname">Full Name</label>
+                            <input id="fullname" name="fullname" type="text" />
+                            <p class="error-message" id="fullname_error">* Please enter your full name</p>
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="text" />
+                            <p class="error-message" id="phone_error">* Please enter a valid phone number</p>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="text" />
+                            <p class="error-message" id="email_error">* Please enter a valid email address</p>
+                        </li>
+                        <li>
+                            <label for="comments">Desired vehicle or info</label>
+                            <textarea id="comments" name="comments" rows="4"></textarea>
+                            <p class="error-message" id="comments_error">* Please provide desired vehicle or info</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hr-container">
+                    <hr>
+                </div>
+                <div class="right">
+                    <h3>We're waiting on your purchase!</h3>
+                    <p class="center">
+                        <button class="btn btn-info submit-btn" type="submit" id="submit">Submit</button>
+                        <button class="btn btn-light" type="reset" id="clear">Reset</button>
+                    </p>
+                </div>
+
+            </form>
+        </section>
+
+
+    </main>
+    <footer id="footer-id">
+        <ul>
+            <li><a href="buy-now.html">Contact Us</a></li>
+            <li>•</li>
+            <li><a href="about.html">FAQ</a></li>
+            <li>•</li>
+            <li><a href="index.html">Store</a></li>
+            <li>•</li>
+            <li><a href="about.html">Privacy Policy</a></li>
+            <li>•</li>
+            <li><a href="about.html">Legal</a></li>
+        </ul>
+        <p>© 2024 Road Runner Motors</p>
+    </footer>
+
+</body>
+
+</html>

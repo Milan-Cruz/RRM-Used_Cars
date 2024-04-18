@@ -1,0 +1,700 @@
+@font-face {
+    font-family: 'Bulletto';
+    src: url('/fonts/bulletto-killa/Bulletto\ Killa.ttf') format('opentype');
+    /* font-weight: normal; */
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: 'Komika';
+    src: url('/fonts/komikax/KOMIKAX_.ttf');
+}
+
+:root {
+    --header-color: #97BBC3;
+    --logo-color: #241F20;
+    --link-hover: #C8195C;
+    --nav-hover: #C8195C;
+    --btn-lvl2: #A3144B;
+    --footer-bg: #253C41;
+    --light-font: #4C3F2F;
+    --bg: #F2F7F8;
+    --white: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, sans-serif;
+    min-height: 85vh;
+    background-color: var(--bg)
+}
+
+#header-id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--header-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    /* margin: 30px 0 15px; */
+    list-style: none;
+    align-items: flex-end;
+    margin-right: 60px;
+}
+
+nav li {
+    margin: 0 8px;
+    text-align: center;
+}
+
+nav li a {
+    color: var(--logo-color);
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 600;
+    font-family: 'Komika', sans-serif;
+}
+
+nav li a:hover {
+    color: var(--nav-hover);
+}
+
+nav li a:focus {
+    color: var(--nav-hover);
+}
+
+.active-page {
+    color: var(--nav-hover);
+    text-shadow:
+        -1px -1px 0 var(--bg),
+        1px -1px 0 var(--bg),
+        -1px 1px 0 var(--bg),
+        1px 1px 0 var(--bg);
+}
+
+.margin-left-hd {
+    display: flex;
+    padding: 0;
+    margin: 0px 0px 0px 60px;
+}
+
+#logo-img {
+    width: auto;
+    height: auto;
+    max-width: 180px;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+#logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bulletto', sans-serif;
+    padding-top: 2px;
+    font-size: 1.2em;
+    height: 100%;
+    text-shadow:
+        -.5px -.5px 0 #FFFFFF,
+        .5px -.5px 0 #FFFFFF,
+        -.5px .5px 0 #FFFFFF,
+        .5px .5px 0 #FFFFFF;
+
+}
+
+#logo-text a {
+    color: var(--logo-color);
+    text-decoration: none;
+}
+
+#logo-text a:hover,
+#logo-text a:focus {
+    color: var(--link-hover);
+    text-decoration: none;
+}
+
+#footer-id {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--footer-bg);
+    font-size: .8em;
+    color: var(--bg);
+}
+
+#footer-id ul {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 15px;
+    list-style: none;
+    align-items: flex-end;
+}
+
+#footer-id li {
+    margin: 0 8px;
+}
+
+#footer-id li a {
+    color: var(--bg);
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+#footer-id li a:hover {
+    color: var(--link-hover);
+}
+
+#footer-id li a:focus {
+    color: var(--link-hover);
+}
+
+#footer-id p {
+    margin: 15px 0 30px;
+}
+
+main {
+    flex: 1 0 100%;
+}
+
+.form-wrapper {
+    /* https://www.flickr.com/photos/keithius/50005754888/ */
+    /* background-image: url("../images/panorama.jpg"); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0rem 0rem;
+    /* padding: 5rem 40vw; */
+    /* min-height: 75.3vh; */
+    /* Set a minimum height to ensure the container is visible */
+    width: 100%;
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: var(--logo-color);
+    text-shadow:
+        -1px -1px 0 #FFFFFF,
+        1px -1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF,
+        1px 1px 0 #FFFFFF;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/panorama.jpg");
+    background-size: cover;
+    background-position: center;
+    /* align-self: center; */
+    text-align: center;
+    min-height: 480px;
+    width: 750px;
+    padding: 0rem 3rem;
+    margin: 2rem auto;
+    line-height: 1.5;
+    font-family: 'Bulletto', sans-serif;
+    font-weight: 100;
+    font-size: larger;
+    border-radius: 20px;
+}
+
+.form-content li {
+    list-style: none;
+}
+
+.form-content .left li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-content .left li label {
+    width: 35%;
+}
+
+.form-content .left li input,
+.form-content .left li textarea {
+    width: 65%;
+}
+
+.form-content .left li .error-message,
+.form-content .left li .error {
+    width: 65%;
+    margin-top: 0.5rem;
+    color: var(--link-hover);
+}
+
+.hr-container {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.about-wrapper {
+    /* https://www.flickr.com/photos/keithius/50005754888/ */
+    /* background-image: url("../images/panorama.jpg"); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0rem 0rem;
+    /* padding: 5rem 40vw; */
+    /* min-height: 75.3vh; */
+    /* Set a minimum height to ensure the container is visible */
+    width: 100%;
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: var(--logo-color);
+    text-shadow:
+        -1px -1px 0 #FFFFFF,
+        1px -1px 0 #FFFFFF,
+        -1px 1px 0 #FFFFFF,
+        1px 1px 0 #FFFFFF;
+}
+
+.about-content {
+    /* Free source https://www.flickr.com/photos/keithius/50005754888/ */
+    background-image: url("../images/panorama.jpg");
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    text-align: center;
+    height: 480px;
+    width: 750px;
+    padding: 3rem 3rem;
+    margin: 2rem auto;
+    line-height: 2;
+    font-family: 'Bulletto', sans-serif;
+    font-weight: 100;
+    font-size: larger;
+    border-radius: 20px;
+}
+
+.about-content h2 {
+    margin-top: 0;
+}
+
+/* Bootstrap like buttons */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-info {
+    color: #fff;
+    /* background-color: #17a2b8;
+    border-color: #17a2b8; */
+    background-color: var(--link-hover);
+    border-color: var(--link-hover);
+}
+
+.btn-info:hover {
+    color: #fff;
+    /* background-color: #138496;
+    border-color: #117a8b; */
+    background-color: var(--btn-lvl2);
+    border-color: var(--btn-lvl2);
+}
+
+.btn-info:focus,
+.btn-info.focus {
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.btn-info.disabled,
+.btn-info:disabled {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-danger:focus,
+.btn-danger.focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-danger.disabled,
+.btn-danger:disabled {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn-light:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+.btn-light:focus,
+.btn-light.focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+.btn-light.disabled,
+.btn-light:disabled {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.submit-btn {
+    margin-right: 5em;
+}
+
+/* CAROUSEL */
+.slider-wrapper {
+    margin: 2rem;
+    position: relative;
+    overflow: hidden;
+    flex: 1 0 100%;
+    /* padding: 18px 0px; */
+}
+
+.slides-container {
+    height: 480px;
+    width: 853.5px;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: var(--bg);
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+}
+
+#slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--bg);
+    padding-bottom: 20px;
+    font-family: 'Komika', sans-serif;
+    font-size: 1.2em;
+    text-shadow:
+        -1px -1px 0 var(--logo-color),
+        1px -1px 0 var(--logo-color),
+        -1px 1px 0 var(--logo-color),
+        1px 1px 0 var(--logo-color);
+
+}
+
+.slide p {
+    font-size: .7em;
+}
+
+.slide:nth-child(1) {
+    /* Free source https://upload.wikimedia.org/wikipedia/commons/a/a8/2019_Toyota_RAV4_Hybrid_01.jpg */
+    background-image: url("../images/white-rav4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide:nth-child(2) {
+    background-image: url("../images/2018_GMC_Terrain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Free Source: https://upload.wikimedia.org/wikipedia/commons/7/7f/2018_GMC_Terrain_12.20.17.jpg */
+    /* background-color: #b03532; */
+}
+
+.slide:nth-child(3) {
+    /* Free source https://upload.wikimedia.org/wikipedia/commons/7/76/2020_Subaru_Forester_%28base%29_in_Crystal_White%2C_front_right.jpg */
+    background-image: url("../images/2020_Subaru_Forester.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #6a478f; */
+}
+
+.slide:nth-child(4) {
+    /* Free source https://upload.wikimedia.org/wikipedia/commons/5/50/Mitsubishi_Outlander_PHEV_CRI_12_2021_2704.jpg */
+    background-image: url("../images/Mitsubishi_Outlander_PHEV2021.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #da6f2b; */
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1201px) {
+    body {
+        min-height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    body {
+        min-height: 85vh;
+    }
+
+    #header-id {
+        min-height: 40px;
+    }
+
+    nav li a {
+        font-size: 14px;
+    }
+
+    #logo-text {
+        font-size: 1em;
+    }
+
+    /* Resize form content */
+    .form-content,
+    .about-content {
+        min-height: 400px;
+        width: 700px;
+        font-size: smaller;
+    }
+
+    /* Reduce footer fonts */
+    #footer-id {
+        font-size: 0.7em;
+    }
+
+    .slides-container {
+        height: 400px;
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    body {
+        min-height: 80vh;
+    }
+
+    #header-id {
+        min-height: 30px;
+    }
+
+    nav li a {
+        font-size: 12px;
+    }
+
+    #logo-text {
+        font-size: 0.9em;
+    }
+
+    /* Resize form content */
+    .form-content,
+    .about-content {
+        min-height: 350px;
+        width: 650px;
+        font-size: x-small;
+    }
+
+    /* Reduce footer fonts */
+    #footer-id {
+        font-size: 0.6em;
+    }
+
+    .slides-container {
+        height: 350px;
+        width: 650px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        min-height: 70vh;
+    }
+
+    #header-id {
+        min-height: 20px;
+    }
+
+    nav li a {
+        font-size: 10px;
+    }
+
+    #logo-text {
+        font-size: 0.8em;
+    }
+
+    /* Resize form content */
+    .form-content,
+    .about-content {
+        min-height: 300px;
+        width: 600px;
+        font-size: xx-small;
+    }
+
+    /* Reduce footer fonts */
+    #footer-id {
+        font-size: 0.5em;
+    }
+
+    .slides-container {
+        height: 300px;
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    body {
+        min-height: 60vh;
+    }
+
+    #header-id {
+        min-height: 15px;
+    }
+
+    nav li a {
+        font-size: 8px;
+    }
+
+    #logo-text {
+        font-size: 0.7em;
+    }
+
+    /* Resize form content */
+    .form-content,
+    .about-content {
+        min-height: 250px;
+        width: 550px;
+        font-size: xxx-small;
+    }
+
+    /* Reduce footer fonts */
+    #footer-id {
+        font-size: 0.4em;
+    }
+
+    .slides-container {
+        height: 250px;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        min-height: 50vh;
+    }
+
+    #header-id {
+        min-height: 10px;
+    }
+
+    nav li a {
+        font-size: 6px;
+    }
+
+    #logo-text {
+        font-size: 0.6em;
+    }
+
+    /* Resize form content */
+    .form-content,
+    .about-content {
+        min-height: 200px;
+        width: 500px;
+        font-size: 0.5em;
+    }
+
+    /* Reduce footer fonts */
+    #footer-id {
+        font-size: 0.3em;
+    }
+
+    .slides-container {
+        height: 200px;
+        width: 450px;
+    }
+}
